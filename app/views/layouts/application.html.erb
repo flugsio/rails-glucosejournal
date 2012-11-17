@@ -16,7 +16,9 @@
     <% end -%>
   </header>
   <%= render 'flashes' -%>
-  <%= yield %>
+  <div id="main">
+    <%= yield %>
+  </div>
   <%= render 'javascript' %>
 </body>
 </html>
