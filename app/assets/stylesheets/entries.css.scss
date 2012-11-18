@@ -1,0 +1,11 @@
+@import 'bourbon';
+
+.entries {
+  label {
+    display: inline;
+    margin-right: 4px;
+  }
+  input {
+    width: 100px;
+  }
+}

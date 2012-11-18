@@ -10,6 +10,7 @@
 <body class="<%= body_class %>">
   <header>
     <% if signed_in? -%>
+      <%= link_to "Entries", entries_path %>
       <%= link_to "Sign out", sign_out_path, :method => :delete %>
     <% else -%>
       <%= link_to "Sign in", sign_in_path %>

@@ -1,4 +1,7 @@
 RailsGlucosejournal::Application.routes.draw do
-  root :to => 'Clearance::Sessions#new'
+
+  resources :entries
+
+  root :to => 'entries#index'
 
 end
