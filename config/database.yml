@@ -5,6 +5,8 @@ development: &default
   min_messages: warning
   pool: 5
   timeout: 5000
+  password: coolkatt
+  username: postgres
 
 test:
   <<: *default

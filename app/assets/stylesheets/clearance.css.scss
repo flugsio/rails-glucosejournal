@@ -4,10 +4,30 @@
 .clearance-passwords,
 .clearance-users {
   #main {
-    width: 300px;
-    margin: 50px auto 0 auto;
-  }
+		width: 230px;
+		background: #e9f1f5;
+		border-radius: 10px;
+		padding: 25px 40px 10px;
+		margin: 50px auto 0 auto;
+	}
   ul {
     list-style-type: none;
   }
 }
+#session_email, #session_password {border-radius:4px; border: 1px solid #ccc; width:220px; height:18px; padding-left:5px;}
+
+#session_email:focus, #session_password:focus {border: 1px solid #bfd6e2; box-shadow:0;outline:1px solid #bfd6e2;}
+h2 {
+	text-align: center;
+	color: #7c97a5;
+	font-size: 1.5em;
+	font-family: Arial Black, $georgia;
+	}
+.text_field label {font-family: $verdana; margin: 12px 0 3px 0; color:#6f848f;}
+.submit_field input { @include linear-gradient(#bfd6e2, #acc0cb); padding: 7px 11px; border:0; color:white; font-family: $helvetica; font-weight: bold; border-radius:4px; margin:9px 0 6px;}
+.submit_field input:hover, .submit_field input:active { @include linear-gradient(#b2c8d3, #91aab7); cursor:pointer; }
+#main a {font-family: $verdana; color: #7694a4; text-decoration: none;}
+#main a:hover {color:#54666f;}
+header a.login {float:right !important;}
+nav ul, nav li {padding:0;margin:0;}
+#main ul li {text-align:right;}
