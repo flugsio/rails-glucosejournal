@@ -2,22 +2,22 @@
 
 header {
   height: 40px;
-  background-color: #95E985;
-  @include background(linear-gradient(top, #55B530 0%, #259530 100%));
+  background-color: #353a3d;
+  @include background(linear-gradient(top, #353a3d 0%, #232628 100%));
 }
 header a,
 header a:link,
 header a:visited {
   color: #ffffff;
   border: 1px solid transparent;
-  font-family: $helvetica;
-  font-size: 20px;
+  font-family: Arial Black, $helvetica;
+  font-weight: bold;
+  font-size: 1.1em;
   float: left;
-  margin-left: 10px;
-  padding: 10px 30px 8px 30px;
+  padding: 10px 27px 9px 27px;
   text-decoration: none;
 }
 header a:hover {
   color: #ffffff;
-  @include background(linear-gradient(top, #65C540 0%, #30A450 100%));
+  @include background(linear-gradient(top, #434a4e 0%, #505d65 100%));
 }

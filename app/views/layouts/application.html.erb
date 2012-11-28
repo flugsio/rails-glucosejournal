@@ -9,12 +9,15 @@
 </head>
 <body class="<%= body_class %>">
   <header>
+  <nav class="menu">
+  <ul>
     <% if signed_in? -%>
-      <%= link_to "Entries", entries_path %>
-      <%= link_to "Sign out", sign_out_path, :method => :delete %>
+      <li><%= link_to "Entries", entries_path %></li>
+      <li><%= link_to "Sign out", sign_out_path, :method => :delete %></li>
     <% else -%>
-      <%= link_to "Sign in", sign_in_path %>
+      <li class="sign_in"><%= link_to "Sign in", sign_in_path, :class => 'login' %></li>
     <% end -%>
+	</nav>
   </header>
   <%= render 'flashes' -%>
   <div id="main">
