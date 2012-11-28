@@ -9,7 +9,10 @@ class EntriesController < ApplicationController
   def create
     @entry = current_user.entries.build(params[:entry])
 
-    @entry.save!
-    redirect_to entries_path
+    if @entry.save
+      @form_entry = Entry.new
+    else
+      @form_entry = @entry
+    end
   end
 end

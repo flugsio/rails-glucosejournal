@@ -1,0 +1,12 @@
+<%= form_for entry, :remote => true do |form| %>
+  <%= form.label :at %>
+  <%= form.text_field :at %>
+  <%= form.label :glucose %>
+  <%= form.text_field :glucose %>
+  <%= form.label :carbohydrates %>
+  <%= form.text_field :carbohydrates %>
+  <%= form.label :dose %>
+  <%= form.text_field :dose %>
+
+  <%= form.submit :save %>
+<% end %>

@@ -1,31 +1,15 @@
 <p>Enter your values here.</p>
 
-<%= form_for @new_entry do |form| %>
-  <%= form.label :at %>
-  <%= form.text_field :at %>
-  <%= form.label :glucose %>
-  <%= form.text_field :glucose %>
-  <%= form.label :carbohydrates %>
-  <%= form.text_field :carbohydrates %>
-  <%= form.label :dose %>
-  <%= form.text_field :dose %>
-
-  <%= form.submit :save %>
-<% end %>
+<div id="entry_form">
+  <%= render 'form', :entry => @new_entry %>
+</div>
 
 <table>
-  <tr>
+  <tr id="entries_first_row">
     <th>Date</th>
     <th>Glucose</th>
     <th>Carbohydrates</th>
     <th>Dose</th>
   </tr>
-  <% @entries.each do |entry| %>
-    <tr>
-      <th><%= entry.created_at %></th>
-      <th><%= entry.glucose %></th>
-      <th><%= entry.carbohydrates %></th>
-      <th><%= entry.dose %></th>
-    </tr>
-  <% end %> 
+  <%= render @entries %>
 </table>
